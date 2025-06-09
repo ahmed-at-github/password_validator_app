@@ -27,13 +27,13 @@ export default function PassValidComp() {
     return (
         <>
             <div>
-                <div className="bg-muted flex column p-4"  >
+                <div className="bg-muted flex column p-4" style={{textAlign: "center", maxWidth:"350px", margin: "0 auto"}} >
                     <h2 className="larger">Password Strength</h2>
-                    <pre className="" style={{textAlign: "center"}}>
+                    <pre className="" >
                         <span >Enter Password:</span> <input className="bd-default" type="text" onChange={(e) => validate(e.target.value)} />
                     </pre>
 
-                    {errorMsg === "" ? null : (<p className={style} style={{fontWeight: "bolder"}} >{errorMsg}</p>)}
+                    {errorMsg === "" ? null : (<p className={style+" bold"}>{errorMsg}</p>)}
 
                     
                 </div>
