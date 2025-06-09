@@ -21,19 +21,21 @@ export default function PassValidComp() {
             setStyle("danger")
         }
         console.log(style);
-        
+
     }
 
     return (
         <>
             <div>
-                <div className="bg-muted flex column align-center ">
+                <div className="bg-muted flex column p-4"  >
                     <h2 className="larger">Password Strength</h2>
-                    <pre className="">
-                        <span>Enter Password:</span> <input className="bd-default" type="text" onChange={(e) => validate(e.target.value)} />
+                    <pre className="" style={{textAlign: "center"}}>
+                        <span >Enter Password:</span> <input className="bd-default" type="text" onChange={(e) => validate(e.target.value)} />
                     </pre>
 
-                    {errorMsg === "" ? null : (<p className={style}>{errorMsg}</p>)}
+                    {errorMsg === "" ? null : (<p className={style} style={{fontWeight: "bolder"}} >{errorMsg}</p>)}
+
+                    
                 </div>
             </div>
         </>
