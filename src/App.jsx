@@ -6,7 +6,6 @@ function App() {
 
   return (
     <>
-     <h1>Hello World! Iam App</h1>
      <PassValidComp />
     </>
   )
